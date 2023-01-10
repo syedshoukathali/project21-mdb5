@@ -1,0 +1,164 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/mdb.min.css' %}">
+</head>
+<body>
+    <center>
+        <button type="button" class="btn btn-primary">
+            Profile <span class="badge badge-danger ms-2">9</span>
+            <span class="visually-hidden">unread messages</span>
+          </button>
+          <hr>
+          <button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<hr>
+<div class="btn-group" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-primary">Left</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-danger">Right</button>
+  </div>
+  <hr>
+  <div class="card">
+    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+      <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp" class="img-fluid"/>
+      <a href="#!">
+        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+      </a>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title text-danger">Sea Nature</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#!" class="btn btn-success">Button</a>
+    </div>
+  </div>
+  <hr>
+  <div id="carouselExampleIndicators" class="carousel slide" data-mdb-ride="carousel">
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-mdb-target="#carouselExampleIndicators"
+        data-mdb-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-mdb-target="#carouselExampleIndicators"
+        data-mdb-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-mdb-target="#carouselExampleIndicators"
+        data-mdb-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images/rrr.jpg'%}" class="d-block w-100" alt="Wild Landscape" width="400px" height="500px"/>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/ooo.jpg'%}" class="d-block w-100" alt="Camera" width="400px" height="500px"/>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/ttt.jpg' %}" class="d-block w-100" alt="Exotic Fruits" width="400px" height="500px"/>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <hr>
+  <!-- Buttons trigger collapse -->
+<a
+class="btn btn-primary"
+data-mdb-toggle="collapse"
+href="#collapseExample"
+role="button"
+aria-expanded="false"
+aria-controls="collapseExample"
+>
+Link with href
+</a>
+<button
+class="btn btn-primary"
+type="button"
+data-mdb-toggle="collapse"
+data-mdb-target="#collapseExample"
+aria-expanded="false"
+aria-controls="collapseExample"
+>
+Button with data-mdb-target
+</button>
+
+<!-- Collapsed content -->
+<div class="collapse mt-3" id="collapseExample">
+Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+sapiente ea proident.
+</div>
+<hr>
+<div class="dropdown">
+    <button
+      class="btn btn-primary dropdown-toggle"
+      type="button"
+      id="dropdownMenuButton"
+      data-mdb-toggle="dropdown"
+      aria-expanded="false"
+    >
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu btn-secondary" aria-labelledby="dropdownMenuButton">
+      <li><a class="dropdown-item text-danger" href="#">Python</a></li>
+      <li><a class="dropdown-item text-primary" href="#">Django</a></li>
+      <li><a class="dropdown-item text-success" href="#">HTML</a></li>
+    </ul>
+  </div>
+  <hr>
+  <div class="lightbox">
+    <div class="row">
+      <div class="col-lg-4">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp"
+          data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
+          alt="Table Full of Spices"
+          class="w-100"
+        />
+      </div>
+      <div class="col-lg-4">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/2.webp"
+          data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/2.webp"
+          alt="Winter Landscape"
+          class="w-100"
+        />
+      </div>
+      <div class="col-lg-4">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/3.webp"
+          data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/3.webp"
+          alt="View of the City in the Mountains"
+          class="w-100"
+        />
+      </div>
+    </div>
+  </div>
+    </center>
+    <script src="{% static 'js/mdb.min.js' %}"></script>
+</body>
+</html>
